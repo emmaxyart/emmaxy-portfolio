@@ -3,8 +3,11 @@
 import { motion } from "framer-motion"
 import { Download } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { useIsMobile } from "@/hooks/use-mobile"
 
 export function Resume() {
+  const isMobile = useIsMobile()
+
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -12,15 +15,26 @@ export function Resume() {
       transition={{ duration: 0.5 }}
       className="max-w-4xl mx-auto bg-card p-8 rounded-lg shadow-sm border"
     >
+      {isMobile && (
+        <div className="mb-6 flex justify-center">
+          <Button className="gap-2" onClick={() => window.print()}>
+            <Download className="h-4 w-4" />
+            Print/Save PDF
+          </Button>
+        </div>
+      )}
+      
       <div className="flex justify-between items-start mb-6">
         <div>
           <h1 className="text-3xl font-bold">EMMANUEL UCHEKA EDOBOR</h1>
           <p className="text-xl text-muted-foreground mt-2">Front-End Developer</p>
         </div>
-        <Button className="gap-2" onClick={() => window.print()}>
-          <Download className="h-4 w-4" />
-          Print/Save PDF
-        </Button>
+        {!isMobile && (
+          <Button className="gap-2" onClick={() => window.print()}>
+            <Download className="h-4 w-4" />
+            Print/Save PDF
+          </Button>
+        )}
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

@@ -119,17 +119,17 @@ export default function Portfolio() {
       <main className="flex-1">
         <div className="container mx-auto px-4 py-12">
           {/* Hero Section */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center min-h-[80vh]">
-            <div className="space-y-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center min-h-[80vh] px-4 sm:px-6">
+            <div className="space-y-6 text-center md:text-left">
               <div>
-                <AnimatedText text="Hello, I'm" className="text-muted-foreground mb-2 text-xl" delay={0.3} />
-                <AnimatedText text="Edobor Emmanuel" className="text-5xl font-bold tracking-tight" delay={0.5} />
+                <AnimatedText text="Hello, I'm" className="text-muted-foreground mb-2 text-lg sm:text-xl" delay={0.3} />
+                <AnimatedText text="Edobor Emmanuel" className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight" delay={0.5} />
               </div>
               <motion.p
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.8 }}
-                className="text-xl text-muted-foreground"
+                className="text-lg sm:text-xl text-muted-foreground"
               >
                 I'm a Frontend Developer specializing in creating engaging, user-friendly web experiences.
               </motion.p>
@@ -138,7 +138,7 @@ export default function Portfolio() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 1 }}
-                className="flex flex-wrap justify-center gap-4 pt-4"
+                className="flex flex-wrap justify-center md:justify-start gap-4 pt-4"
               >
                 <Link href="/resume" target="_blank">
                   <Button variant="default" className="gap-2">
