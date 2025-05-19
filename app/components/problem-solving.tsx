@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { LightbulbIcon, Code, GitBranch, Puzzle } from "lucide-react"
+import { LightbulbIcon, Code, GitBranch, Puzzle, Users, Brain } from "lucide-react"
 
 export function ProblemSolving() {
   const skills = [
@@ -24,6 +24,17 @@ export function ProblemSolving() {
       title: "Creative Solutions",
       description: "Developing innovative approaches to technical challenges while maintaining code quality.",
       icon: <Puzzle className="h-6 w-6 text-purple-500" />,
+    },
+    {
+      title: "Problem Solving",
+      description: "Identifying issues, analyzing root causes, and implementing effective solutions efficiently.",
+      icon: <Brain className="h-6 w-6 text-orange-500" />,
+    },
+    {
+      title: "Teamwork & Collaboration",
+      description:
+        "Working effectively in cross-functional teams, sharing knowledge, and contributing to collective goals.",
+      icon: <Users className="h-6 w-6 text-indigo-500" />,
     },
   ]
 

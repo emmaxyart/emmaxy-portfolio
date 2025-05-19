@@ -2,7 +2,7 @@
 
 import Image from "next/image"
 import Link from "next/link"
-import { Github, Linkedin, Download, Mail } from "lucide-react"
+import { Github, Linkedin, Download } from "lucide-react"
 import { motion } from "framer-motion"
 
 import { Button } from "@/components/ui/button"
@@ -65,7 +65,10 @@ export default function Portfolio() {
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id)
     if (element) {
-      element.scrollIntoView({ behavior: "smooth" })
+      element.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      })
     }
   }
 
@@ -137,10 +140,6 @@ export default function Portfolio() {
                 transition={{ duration: 0.5, delay: 1 }}
                 className="flex flex-wrap gap-4 pt-4"
               >
-                <Button className="gap-2" onClick={() => scrollToSection("contact")}>
-                  <Mail className="h-4 w-4" />
-                  Contact Me
-                </Button>
                 <Link href="/resume" target="_blank">
                   <Button variant="outline" className="gap-2">
                     <Download className="h-4 w-4" />
@@ -174,24 +173,56 @@ export default function Portfolio() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
               <div className="space-y-4">
                 <p className="text-lg">
-                  I'm a passionate Frontend Developer with expertise in HTML, CSS, JavaScript, TypeScript, React.js, and
-                  Next.js. I enjoy building interactive and user-friendly web applications with a keen eye for design
-                  and a commitment to creating responsive, user-friendly experiences.
+                  I'm Edobor Emmanuel Ucheka, a results-driven Frontend Developer with a strong foundation in modern web
+                  technologies and a deep commitment to building scalable, accessible, and high-performance user
+                  interfaces.
                 </p>
                 <p className="text-lg">
-                  My approach to development focuses on clean code, performance optimization, and staying current with
-                  the latest industry trends and best practices.
+                  With hands-on experience in React.js, Next.js, and TypeScript, I specialize in developing responsive,
+                  component-based web applications with a focus on maintainability and performance. I have a keen eye
+                  for UI/UX best practices and a passion for transforming design systems into pixel-perfect interfaces
+                  using Tailwind CSS, CSS Modules, and other modern styling approaches.
                 </p>
-                <p className="text-lg font-medium text-primary">
-                  Open to Job Opportunities, Collaborations, and Teamwork.
+                <p className="text-lg">
+                  I'm proficient in managing application state, handling API integrations, and optimizing frontend
+                  performance. I also have experience working with version control (Git/GitHub), and deploying
+                  applications on platforms like Vercel and Netlify.
                 </p>
+                <p className="text-lg">
+                  I'm continuously learning and staying up to date with the latest frontend trends, tools, and
+                  frameworks. My goal is to contribute to teams that value clean code, collaboration, and delivering
+                  real value to users.
+                </p>
+                <div className="mt-6">
+                  <h3 className="text-xl font-semibold mb-3">🔧 Technical Skills</h3>
+                  <ul className="space-y-2 list-disc pl-5">
+                    <li>
+                      <span className="font-medium">Languages:</span> HTML5, CSS3, JavaScript (ES6+), TypeScript
+                    </li>
+                    <li>
+                      <span className="font-medium">Frameworks & Libraries:</span> React.js, Next.js, Tailwind CSS,
+                      Bootstrap, Framer Motion, Shadcn UI
+                    </li>
+                    <li>
+                      <span className="font-medium">State Management:</span> React Hooks, Context API
+                    </li>
+                    <li>
+                      <span className="font-medium">Tooling & Deployment:</span> Git, GitHub, Vercel, Netlify, VS Code,
+                      Figma
+                    </li>
+                    <li>
+                      <span className="font-medium">Practices:</span> Responsive Design, Accessibility (WCAG), SEO
+                      Optimization, API Integration, Modular Code Architecture
+                    </li>
+                  </ul>
+                </div>
               </div>
 
               {/* Skills Section */}
               <div>
                 <h3 className="text-xl font-semibold mb-4">Tech Stack</h3>
                 <div className="space-y-4">
-                  <SkillProgress skill="React.js" percentage={90} color="bg-blue-500" />
+                  <SkillProgress skill="React.js" percentage={80} color="bg-blue-500" />
                   <SkillProgress skill="Next.js" percentage={85} color="bg-black dark:bg-white" />
                   <SkillProgress skill="JavaScript" percentage={95} color="bg-yellow-400" />
                   <SkillProgress skill="TypeScript" percentage={80} color="bg-blue-600" />
@@ -204,9 +235,9 @@ export default function Portfolio() {
             </div>
           </AnimatedSection>
 
-          {/* Problem Solving Section */}
+          {/* Problem Solving Section - Now Skills Section */}
           <AnimatedSection className="mt-24" delay={0.2}>
-            <h2 className="text-3xl font-bold mb-6">Problem-Solving Abilities</h2>
+            <h2 className="text-3xl font-bold mb-6">Skills</h2>
             <ProblemSolving />
           </AnimatedSection>
 

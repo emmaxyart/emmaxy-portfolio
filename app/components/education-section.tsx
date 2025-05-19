@@ -17,21 +17,21 @@ export function EducationSection() {
       degree: "Frontend Development Certified",
       institution: "Softlyft Technologies",
       year: "",
-      description: "Focused on Frontend Web development and Responsible web Design.",
+      description:
+        "Focused on Frontend Web development technologies including React.js, Next.js (TypeScript), Tailwind CSS and Responsive Web Design.",
       type: "degree",
     },
     {
       degree: "HNG Internship",
       institution: "Tech Bootcamp Academy",
       year: "2024",
-      description:
-        "Intensive 12-week program covering modern web development technologies including React, Node.js, and database management.",
+      description: "Intensive 12-week program covering Modern Web Development.",
       type: "certification",
     },
     {
       degree: "Advanced React & Next.js Certification",
       institution: "Frontend Masters",
-      year: "2023",
+      year: "2024",
       description: "Comprehensive course on building scalable applications with React and Next.js.",
       type: "certification",
     },
