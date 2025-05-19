@@ -138,10 +138,10 @@ export default function Portfolio() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 1 }}
-                className="flex flex-wrap gap-4 pt-4"
+                className="flex flex-wrap justify-center gap-4 pt-4"
               >
                 <Link href="/resume" target="_blank">
-                  <Button variant="outline" className="gap-2">
+                  <Button variant="default" className="gap-2">
                     <Download className="h-4 w-4" />
                     View Resume
                   </Button>
@@ -267,7 +267,7 @@ export default function Portfolio() {
           </AnimatedSection>
 
           {/* Contact Section */}
-          <AnimatedSection id="contact" className="mt-24" delay={0.3}>
+          <AnimatedSection className="mt-24" delay={0.3}>
             <h2 className="text-3xl font-bold mb-6 text-center">Contact Me</h2>
             <ContactForm />
           </AnimatedSection>
