@@ -1,30 +1,32 @@
-# Emmaxy art portfolio
+Edobor Emmanuel - Frontend Developer Portfolio
+Portfolio Preview
 
-*Automatically synced with your [v0.dev](https://v0.dev) deployments*
+A modern, responsive portfolio website showcasing the skills, projects, and experience of Edobor Emmanuel, a Frontend Developer.
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/edobor-emmanuels-projects/v0-emmaxy-art-portfolio)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.dev-black?style=for-the-badge)](https://v0.dev/chat/projects/Vtt7wZw8P03)
+🌟 Features
+Responsive Design: Fully responsive layout that works on all devices
+Dark/Light Mode: Toggle between dark and light themes
+Animated Sections: Smooth animations using Framer Motion
+Project Showcase: Gallery of projects with links to live demos and repositories
+Skills Visualization: Visual representation of technical skills with progress bars
+Contact Form: Email contact functionality
+Resume Page: Dedicated page for viewing and downloading resume
+Social Media Integration: Links to GitHub, LinkedIn, and WhatsApp
 
-## Overview
+🛠️ Technologies Used
+Next.js: React framework for server-side rendering and static site generation
+React: JavaScript library for building user interfaces
+TypeScript: Typed JavaScript for better developer experience
+Tailwind CSS: Utility-first CSS framework
+Framer Motion: Animation library for React
+Lucide React: Icon library
+Shadcn/UI: Component library
 
-This repository will stay in sync with your deployed chats on [v0.dev](https://v0.dev).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.dev](https://v0.dev).
+📋 Prerequisites
+Node.js (v18 or higher)
+npm or yarn
+🚀 Installation
 
-## Deployment
-
-Your project is live at:
-
-**[https://vercel.com/edobor-emmanuels-projects/v0-emmaxy-art-portfolio](https://vercel.com/edobor-emmanuels-projects/v0-emmaxy-art-portfolio)**
-
-## Build your app
-
-Continue building your app on:
-
-**[https://v0.dev/chat/projects/Vtt7wZw8P03](https://v0.dev/chat/projects/Vtt7wZw8P03)**
-
-## How It Works
-
-1. Create and modify your project using [v0.dev](https://v0.dev)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+Clone the repository:
+git clone https://github.com/yourusername/emmaxy-art-portfolio.git
+cd emmaxy-art-portfolio
