@@ -19,6 +19,15 @@ import { WhatsAppIcon } from "./components/whatsapp-icon"
 export default function Portfolio() {
   const projects = [
     {
+      title: "Savora-Cipe",
+      description:
+        "A recipe discovery platform with a modern UI that helps users find and explore delicious recipes from around the world.",
+      tech: ["Next.js", "TypeScript", "Tailwind CSS", "API Integration"],
+      repoUrl: "https://github.com/emmaxyart/Savora-Cipe",
+      demoUrl: "https://savora-cipe.vercel.app/",
+      imageUrl: "/images/sav.PNG",
+    },
+    {
       title: "Riddle-Quest",
       description:
         "An engaging brain-teaser game where players solve time-based riddles across different difficulty levels.",
